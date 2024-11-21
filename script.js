@@ -106,31 +106,32 @@ heroButton.addEventListener(('click'), () => {
 // let sections = document.querySelectorAll('section')
 
 // Countdown Timer
-        const eventDate = new Date("2025-02-26T10:00:00").getTime();
+        // Use ISO 8601 date format for better compatibility
+var countDownDate = new Date("2025-02-26T00:00:00Z").getTime(); // UTC time
 
-        const countDown = setInterval(() => {
-            const currentDate = new Date().getTime();
-            const timeToEvent = eventDate - currentDate;
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
 
-            if (timeToEvent < 0) {
-                clearInterval(countDown);
-                document.querySelector('#days-value').innerHTML = "0";
-                document.querySelector('#hours-value').innerHTML = "0";
-                document.querySelector('#mins-value').innerHTML = "0";
-                document.querySelector('#secs-value').innerHTML = "0";
-            } else {
-                const days = Math.floor(timeToEvent / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((timeToEvent % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeToEvent % (1000 * 60 * 60)) / (1000 * 60)); 
-                const seconds = Math.floor((timeToEvent % (1000 * 60)) / 1000);
+  // Calculate days, hours, minutes, and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                document.querySelector('#days-value').innerHTML = days;
-                document.querySelector('#hours-value').innerHTML = hours;
-                document.querySelector('#mins-value').innerHTML = minutes;
-                document.querySelector('#secs-value').innerHTML = seconds;
-            }
+  // Display the result in the corresponding elements
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
 
-        }, 1000);
+  // If the countdown is over, clear the interval and show "EXPIRED"
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
 
 
 // document.querySelector('#hero-button').addEventListener('click', () => {
