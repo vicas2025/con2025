@@ -1,144 +1,113 @@
- 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
+/* Reset */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-<!-- Mirrored from vicas.org/Departments/cs/ICMTCC24/publication.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jul 2024 22:58:24 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <title>publication</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.html">
-    <script src="script.js" defer></script>
-</head>
-<style>
-    .announcement-container {
-        background-color: white;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        text-align: center;
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+header {
+    background: #004466;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.primary-logos img {
+    height: 80px;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+.primary-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.primary-navigation li {
+    margin: 0 10px;
+}
+
+.primary-navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.primary-navigation .active a {
+    background: #FF0066;
+    border-radius: 4px;
+}
+
+#hero1 {
+    padding: 2rem;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#hero1 h1 {
+    color: #FF0066;
+    margin-bottom: 1rem;
+}
+
+#hero1 ul {
+    margin: 1rem 0;
+    padding-left: 20px;
+}
+
+#hero1 ul li {
+    margin-bottom: 0.5rem;
+}
+
+#hero1 p, #hero1 ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#preloader-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader {
+    display: flex;
+    flex-direction: row;
+}
+
+#preloader hr {
+    width: 6px;
+    height: 30px;
+    margin: 2px;
+    background: #004466;
+    border: none;
+    animation: preload 1s infinite;
+}
+
+@keyframes preload {
+    0%, 100% {
+        transform: scaleY(0.5);
     }
-    h1 {
-        font-size: 3rem;
-        color: #333;
-        margin: 0;
+    50% {
+        transform: scaleY(1.5);
     }
-    p {
-        font-size: 1.2rem;
-        color: #666;
-        margin-top: 10px;
-        text-align: center;
-    }
-    .icon {
-        font-size: 50px;
-        color: #ff0066;
-     body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            color: #333;
-        }
-        h1, h2 {
-            text-align: center;
-            color: #444;
-        }
-        p {
-            text-align: justify;
-        }
-        ul {
-            margin: 10px 0 20px 20px;
-        }
-
-    }
-    
-</style>
-<body>
- <header>
-            <div class="primary-logos">
-                <div class="logo-pair">
-                    <img class="nav-logo logo-split" src="assets/logos/logo.png" alt="">
-                      <div class="presentation" ><h3 style="font-size: 1.8rem; color:#FF0066;">VIVEKANANDHA COLLEGE OF ARTS & SCIENCES FOR WOMEN(AUTONOMOUS)
-                   <br> <i style="font-size:1.2rem ;color:#000066">Autonomous||&nbsp;||&nbsp;Reaccredited with 'A+' Grade by NAAC&nbsp;||&nbsp;ISO 9001:2015 Certified</i><br><i style="font-size:1.2rem;color:#000066;">Approved by UGC Act 1956 under Section 2(f)&12(B) and AICTE</i><br><i style="font-size:1.2rem ;color:#000066;">Affiliated to Periyar University, Salem</i></h3></div>
-                
-                </div>
-                <!-- <img class="nav-logo logo-split" src="./assets/logos/ieee-logo3.png" alt=""> -->
-                <!-- <div class="logo-pair"> -->
-               
-                <!--<img class="nav-logo logo-split" src="assets/logos/logo.png" alt="" style="margin-left: -100px;">
-                <img class="nav-logo logo-split" src="assets/logos/logo.png" alt="">
-                <div class="logo-pair">
-                    <!--<div class="presentation"><h3>In association</h3><h1>LETI</h1></div>-->
-                    <img class="nav-logo logo-split" src="assets/logos/chairman.jpg" alt="">
-                </div>
-            </div>
-        </header>
-    <section id="hero"
-    style="height: 8rem; background: rgba(0, 0, 0, 0);">
-
-    <div id="preloader-div">
-        <div id="preloader">
-            <hr><hr><hr><hr>
-        </div>
-    </div>
-
-    <header>
-
-            
-        <ul class="primary-navigation" data-visible = "false">
-            <li class="nav-link active"><a href="index.html">Home</a></li>
-
-            <li class="nav-link committee"><a href="aboutc.html">ABOUT</a></li>
-            <li class="nav-link committee"><a href="guidance.html">GUIDANCE</a></li>
-            <li class="nav-link schedule-section"><a href="timeline.html">TIMELINE</a></li>
-            <li class="nav-link tracks-section"><a href="callforpapers.html">REGISTRATION</a></li>
-            <li class="nav-link speakers-section"><a href="Speaker.html">SPEAKER</a></li>
-            <li class="nav-link committee"><a href="committee.html">COMMITTEE</a></li>
-            
-            <li class="nav-link committee"><a href="Track.html">Track Details</a></li>
-            <li class="nav-link committee"><a href="Plagiarism.html">Plagiarism Policy</a></li>
-            <li class="nav-link committee"><a href="programschedule.html">PROGRAM SCHEDULE</a></li>
-            <li class="nav-link committee"><a href="reviewpolicy.html">REVIEW POLICY</a></li>
-                            
-
-
-
-
-
-
-            <!--<li class="nav-link committee"><a href="https://mace.ac.in/Conference-2020/">Archive</a></li>
-            <li class="nav-link connect-section"><a href="index.php#connect-section">Connect</a></li>-->
-        </ul>
-         <!--<img class="nav-logo" src="./assets/logos/60 yrs MACE.png" alt="">-->
-<div class="float-left"> <a href="index.html"><img src="data:image/png;base64,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" style="height: 24px;"></a> </div>
-    </header>
-    </section>
-
- <h1>Greetings !!!!!</h1>
-
-    <p>
-        We, the <strong>Department of Computer Science & Applications, Vivekanandha College of Arts and Sciences for Women (Autonomous), Namakkal, Tamilnadu, India</strong>, are pleased to announce the <strong>6th International Conference on Metaverse Technologies and Cloud Computing (ICMTCC-2025)</strong>. The event will be conducted in <strong>Hybrid Mode</strong> on the <strong>26th and 27th of February 2025</strong>.
-    </p>
-
-    <h2>Key Information</h2>
-
-    <ul>
-        <li><strong>Paper Submission:</strong> Authors are invited to submit their papers through the conference submission system by <strong>February 15, 2025</strong>.</li>
-        <li>Submissions must be original and should not have been published previously or be under consideration for publication while being evaluated for this conference.</li>
-        <li>All selected and presented papers will be published in conference proceedings with an ISBN.</li>
-    </ul>
-
-    <h2>Publication Opportunities</h2>
-
-    <p>Selected papers from ICMTCC-2025, after further revisions, will be published in the following journals:</p>
-    <ul>
-        <li><strong>ICTACT Journals</strong> (Free of Cost)</li>
-        <li><strong>AIP Conference Proceedings</strong> (With Article Processing Charge)</li>
-    </ul>
-
-    <p>We look forward to your active participation in making this conference a grand success!</p>
-
-</body>
-
-<!-- Mirrored from vicas.org/Departments/cs/ICMTCC24/publication.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jul 2024 22:58:25 GMT -->
-</html>
-
+}
