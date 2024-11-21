@@ -6,7 +6,6 @@
     <title>Publication - ICMTCC-2025</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        /* CSS goes here */
         /* Reset */
         body, h1, h2, p, ul {
             margin: 0;
@@ -20,71 +19,7 @@
             background: #f9f9f9;
         }
 
-        header {
-            background: #004466;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        .primary-logos img {
-            height: 80px;
-        }
-
-        nav {
-            background: #333;
-            color: white;
-            padding: 0.5rem 0;
-        }
-
-        .primary-navigation {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        .primary-navigation li {
-            margin: 0 10px;
-        }
-
-        .primary-navigation a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-        }
-
-        .primary-navigation .active a {
-            background: #FF0066;
-            border-radius: 4px;
-        }
-
-        #hero1 {
-            padding: 2rem;
-            text-align: left;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #hero1 h1 {
-            color: #FF0066;
-            margin-bottom: 1rem;
-        }
-
-        #hero1 ul {
-            margin: 1rem 0;
-            padding-left: 20px;
-        }
-
-        #hero1 ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        #hero1 p, #hero1 ul li {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
+        /* Preloader */
         #preloader-div {
             position: fixed;
             top: 0;
@@ -120,6 +55,91 @@
                 transform: scaleY(1.5);
             }
         }
+
+        /* Header */
+        header {
+            background: #004466;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .primary-logos img {
+            height: 80px;
+        }
+
+        .primary-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .presentation {
+            text-align: center;
+        }
+
+        .presentation h3 {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem 0;
+        }
+
+        .primary-navigation {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .primary-navigation li {
+            margin: 0 10px;
+        }
+
+        .primary-navigation a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+        }
+
+        .primary-navigation .active a {
+            background: #FF0066;
+            border-radius: 4px;
+        }
+
+        /* Hero Section */
+        #hero1 {
+            padding: 2rem;
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #hero1 h1 {
+            color: #FF0066;
+            margin-bottom: 1rem;
+        }
+
+        #hero1 ul {
+            margin: 1rem 0;
+            padding-left: 20px;
+        }
+
+        #hero1 ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        #hero1 p, #hero1 ul li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
     </style>
 </head>
 <body>
@@ -145,6 +165,12 @@
                     </h3>
                 </div>
             </div>
+            <img class="nav-logo logo-split" src="assets/logos/naac.png" alt="">
+            <img class="nav-logo logo-split" src="assets/logos/download.jpg" alt="">
+            <div class="logo-pair">
+                <img class="nav-logo logo-split" src="assets/logos/council.png" alt="">
+            </div>
+            <img class="nav-logo logo-split" src="assets/logos/chairman.jpg" alt="">
         </div>
     </header>
 
