@@ -1,197 +1,77 @@
+ 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+<!-- Mirrored from mace.ac.in/Technical-Conference/callforpapers.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Feb 2024 06:13:19 GMT -->
+
+<!-- Mirrored from vicas.org/Departments/cs/ICMTCC24/callforpapers.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jul 2024 22:58:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publication - ICMTCC-2025</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* Reset */
-        body, h1, h2, p, ul {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+    <title>Registration</title>
 
-        body {
-            line-height: 1.6;
-            color: #333;
-            background: #f9f9f9;
-        }
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.html">
+    <script src="script.js" defer></script>
+<style>
+p {
+    padding: 2rem !important;
+    font-size: 1.6rem !important;
+    text-align: justify;
+}
 
-        /* Preloader */
-        #preloader-div {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: white;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-        #preloader {
-            display: flex;
-            flex-direction: row;
-        }
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+      border-radius: 20px;
+    box-shadow: 5px 5px #000;
+}
 
-        #preloader hr {
-            width: 6px;
-            height: 30px;
-            margin: 2px;
-            background: #004466;
-            border: none;
-            animation: preload 1s infinite;
-        }
+.button2:hover {
+  background-color: #008CBA;
+  color: #fff !important;
+}
 
-        @keyframes preload {
-            0%, 100% {
-                transform: scaleY(0.5);
-            }
-            50% {
-                transform: scaleY(1.5);
-            }
-        }
-
-        /* Header */
-        header {
-            background: #004466;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        .primary-logos img {
-            height: 80px;
-        }
-
-        .primary-logos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .presentation {
-            text-align: center;
-        }
-
-        .presentation h3 {
-            font-size: 1.2rem;
-            color: #fff;
-        }
-
-        .presentation h3 i {
-            font-size: 1.5rem;
-            color: #000066;
-        }
-
-        /* Navigation */
-        nav {
-            background: #333;
-            color: white;
-            padding: 0.5rem 0;
-        }
-
-        .primary-navigation {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        .primary-navigation li {
-            margin: 0 10px;
-        }
-
-        .primary-navigation a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-        }
-
-        .primary-navigation .active a {
-            background: #FF0066;
-            border-radius: 4px;
-        }
-
-        /* Hero Section */
-        #hero1 {
-            padding: 2rem;
-            text-align: left;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #hero1 h1 {
-            color: #FF0066;
-            margin-bottom: 1rem;
-        }
-
-        #hero1 ul {
-            margin: 1rem 0;
-            padding-left: 20px;
-        }
-
-        #hero1 ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        #hero1 p, #hero1 ul li {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        /* Custom Header Layout */
-        .primary-logos img {
-            height: 80px;
-        }
-
-        .primary-logos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .presentation h3 {
-            font-size: 1.8rem;
-            color: #FF0066;
-        }
-
-        .presentation h3 i {
-            font-size: 1.5rem;
-            color: #000066;
-        }
-
-        .primary-navigation li a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            font-weight: bold;
-            font-size: 1rem;
-        }
-
-        .primary-navigation li a:hover {
-            background-color: #FF0066;
-            border-radius: 5px;
-        }
-
-        /* Custom Styling for Logos and Navigation */
-        .primary-logos .logo-pair img {
-            height: 90px;
-            margin: 10px;
-        }
-
-        .presentation h3 span {
-            font-size: 1.5rem;
-            color: #000066;
-        }
-
-    </style>
+.announcement-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+}
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
+.icon {
+    font-size: 50px;
+    color: #ff0066;
+}
+</style>
 </head>
 <body>
     <div id="preloader-div">
