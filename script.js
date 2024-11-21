@@ -106,27 +106,31 @@ heroButton.addEventListener(('click'), () => {
 // let sections = document.querySelectorAll('section')
 
 // Countdown Timer
+        const eventDate = new Date("2025-02-26T10:00:00").getTime();
 
-const eventDate = new Date("February 26, 2025 10:00:00").getTime();
+        const countDown = setInterval(() => {
+            const currentDate = new Date().getTime();
+            const timeToEvent = eventDate - currentDate;
 
-const countDown = setInterval(() => {
-    const currentDate = new Date().getTime();
-   
-    const timeToEvent = eventDate - currentDate;
-    const days = Math.floor(timeToEvent / (1000 * 60 * 60 * 24));   
-    const hours = Math.floor((timeToEvent % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeToEvent % (1000 * 60 * 60)) / (1000 * 60)); 
-    const seconds = Math.floor((timeToEvent % (1000 * 60)) / 1000);
+            if (timeToEvent < 0) {
+                clearInterval(countDown);
+                document.querySelector('#days-value').innerHTML = "0";
+                document.querySelector('#hours-value').innerHTML = "0";
+                document.querySelector('#mins-value').innerHTML = "0";
+                document.querySelector('#secs-value').innerHTML = "0";
+            } else {
+                const days = Math.floor(timeToEvent / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeToEvent % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeToEvent % (1000 * 60 * 60)) / (1000 * 60)); 
+                const seconds = Math.floor((timeToEvent % (1000 * 60)) / 1000);
 
-    var daysContainer = document.querySelector('#days-value');
-    if (daysContainer != null) {
-        document.querySelector('#days-value').innerHTML = days;
-        document.querySelector('#hours-value').innerHTML = hours;
-        document.querySelector('#mins-value').innerHTML = minutes;
-        document.querySelector('#secs-value').innerHTML = seconds;
-    }
+                document.querySelector('#days-value').innerHTML = days;
+                document.querySelector('#hours-value').innerHTML = hours;
+                document.querySelector('#mins-value').innerHTML = minutes;
+                document.querySelector('#secs-value').innerHTML = seconds;
+            }
 
-}, 1000);
+        }, 1000);
 
 
 // document.querySelector('#hero-button').addEventListener('click', () => {
