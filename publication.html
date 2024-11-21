@@ -1,113 +1,189 @@
-/* Reset */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication - ICMTCC-2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Reset */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-body {
-    line-height: 1.6;
-    color: #333;
-    background: #f9f9f9;
-}
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
 
-header {
-    background: #004466;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
+        header {
+            background: #004466;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
 
-.primary-logos img {
-    height: 80px;
-}
+        .primary-logos img {
+            height: 80px;
+        }
 
-nav {
-    background: #333;
-    color: white;
-    padding: 0.5rem 0;
-}
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5rem 0;
+        }
 
-.primary-navigation {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
+        .primary-navigation {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
 
-.primary-navigation li {
-    margin: 0 10px;
-}
+        .primary-navigation li {
+            margin: 0 10px;
+        }
 
-.primary-navigation a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-}
+        .primary-navigation a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+        }
 
-.primary-navigation .active a {
-    background: #FF0066;
-    border-radius: 4px;
-}
+        .primary-navigation .active a {
+            background: #FF0066;
+            border-radius: 4px;
+        }
 
-#hero1 {
-    padding: 2rem;
-    text-align: left;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+        #hero1 {
+            padding: 2rem;
+            text-align: left;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-#hero1 h1 {
-    color: #FF0066;
-    margin-bottom: 1rem;
-}
+        #hero1 h1 {
+            color: #FF0066;
+            margin-bottom: 1rem;
+        }
 
-#hero1 ul {
-    margin: 1rem 0;
-    padding-left: 20px;
-}
+        #hero1 ul {
+            margin: 1rem 0;
+            padding-left: 20px;
+        }
 
-#hero1 ul li {
-    margin-bottom: 0.5rem;
-}
+        #hero1 ul li {
+            margin-bottom: 0.5rem;
+        }
 
-#hero1 p, #hero1 ul li {
-    font-size: 1rem;
-    line-height: 1.6;
-}
+        #hero1 p, #hero1 ul li {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
 
-#preloader-div {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        #preloader-div {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-#preloader {
-    display: flex;
-    flex-direction: row;
-}
+        #preloader {
+            display: flex;
+            flex-direction: row;
+        }
 
-#preloader hr {
-    width: 6px;
-    height: 30px;
-    margin: 2px;
-    background: #004466;
-    border: none;
-    animation: preload 1s infinite;
-}
+        #preloader hr {
+            width: 6px;
+            height: 30px;
+            margin: 2px;
+            background: #004466;
+            border: none;
+            animation: preload 1s infinite;
+        }
 
-@keyframes preload {
-    0%, 100% {
-        transform: scaleY(0.5);
-    }
-    50% {
-        transform: scaleY(1.5);
-    }
-}
+        @keyframes preload {
+            0%, 100% {
+                transform: scaleY(0.5);
+            }
+            50% {
+                transform: scaleY(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader-div">
+        <div id="preloader">
+            <hr><hr><hr><hr>
+        </div>
+    </div>
+
+    <header>
+        <div class="primary-logos">
+            <div class="logo-pair">
+                <img class="nav-logo logo-split" src="assets/logos/logo.png" alt="Vivekanandha College Logo">
+                <div class="presentation">
+                    <h3>
+                        <span style="color:#FF0066; font-size: 1.8rem;">Tiruchengode</span><br>
+                        VIVEKANANDHA COLLEGE OF ARTS & SCIENCES FOR WOMEN<br>
+                        <span style="color:#000066; font-size: 1.2rem;">
+                            Autonomous | Reaccredited with 'A+' Grade by NAAC | ISO 9001:2015 Certified<br>
+                            Approved by UGC Act 1956 under Section 2(f)&12(B) and AICTE<br>
+                            Affiliated to Periyar University, Salem
+                        </span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="primary-navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutc.html">About</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="callforpapers.html">Registration</a></li>
+            <li><a href="Speaker.html">Speaker</a></li>
+            <li><a href="committee.html">Committee</a></li>
+            <li class="active"><a href="publication.html">Publication</a></li>
+            <li><a href="Track.html">Track Details</a></li>
+            <li><a href="Plagiarism.html">Plagiarism Policy</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero1">
+        <div class="content">
+            <h1>Publication</h1>
+            <p>Greetings !!!!!</p>
+            <p>We, the Department of Computer Science & Applications, Vivekanandha College of Arts and Sciences for Women (Autonomous), Namakkal, Tamil Nadu, India, are organizing the 6th International Conference on Metaverse Technologies and Cloud Computing (ICMTCC-2025) [Hybrid Mode] on 26th and 27th February 2025.</p>
+            <h2>Paper Submission</h2>
+            <ul>
+                <li>Authors are invited to submit papers through the conference Submission System by <strong>February 15, 2025</strong>.</li>
+                <li>Submissions must be original and should not have been published previously or be under consideration for publication while being evaluated for this conference.</li>
+                <li>All the selected and presented papers will be published in conference proceedings with an ISBN.</li>
+                <li>Selected papers from ICMTCC-2025, after further revisions, will be published in the following journals:</li>
+                <ul>
+                    <li><strong>ICTACT Journals</strong> (Free of Cost)</li>
+                    <li><strong>AIP Conference Proceedings</strong> (With Article Processing Charge)</li>
+                </ul>
+            </ul>
+            <h2>Contact</h2>
+            <p><strong>Dr. K. Ramesh</strong><br>
+                HOD/CS<br>
+                <a href="mailto:Headcomputerscience@vicas.org">Headcomputerscience@vicas.org</a><br>
+                Phone: 9942711164
+            </p>
+        </div>
+    </section>
+</body>
+</html>
