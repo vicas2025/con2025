@@ -107,10 +107,10 @@ heroButton.addEventListener(('click'), () => {
 
 // Countdown Timer
 
-const eventDate = new Date("March 18, 2024 10:00:00").getTime()
+const eventDate = new Date("February 26, 2025 10:00:00").getTime();
 
 const countDown = setInterval(() => {
-    const currentDate = new Date().getTime()
+    const currentDate = new Date().getTime();
    
     const timeToEvent = eventDate - currentDate;
     const days = Math.floor(timeToEvent / (1000 * 60 * 60 * 24));   
@@ -118,12 +118,12 @@ const countDown = setInterval(() => {
     const minutes = Math.floor((timeToEvent % (1000 * 60 * 60)) / (1000 * 60)); 
     const seconds = Math.floor((timeToEvent % (1000 * 60)) / 1000);
 
-    var daysContainer = document.querySelector('#days-value')
+    var daysContainer = document.querySelector('#days-value');
     if (daysContainer != null) {
-        document.querySelector('#days-value').innerHTML = days
-        document.querySelector('#hours-value').innerHTML = hours
-        document.querySelector('#mins-value').innerHTML = minutes
-        document.querySelector('#secs-value').innerHTML = seconds
+        document.querySelector('#days-value').innerHTML = days;
+        document.querySelector('#hours-value').innerHTML = hours;
+        document.querySelector('#mins-value').innerHTML = minutes;
+        document.querySelector('#secs-value').innerHTML = seconds;
     }
 
 }, 1000);
