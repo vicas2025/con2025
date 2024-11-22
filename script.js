@@ -107,26 +107,22 @@ heroButton.addEventListener(('click'), () => {
 
 // Countdown Timer
         // Use ISO 8601 date format for better compatibility
-const eventDate = new Date("february 26, 2025 10:00:00").getTime()
-
-const countDown = setInterval(() => {
-    const currentDate = new Date().getTime()
-   
-    const timeToEvent = eventDate - currentDate;
-    const days = Math.floor(timeToEvent / (1000 * 60 * 60 * 24));   
-    const hours = Math.floor((timeToEvent % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeToEvent % (1000 * 60 * 60)) / (1000 * 60)); 
-    const seconds = Math.floor((timeToEvent % (1000 * 60)) / 1000);
-
-    var daysContainer = document.querySelector('#days-value')
-    if (daysContainer != null) {
-        document.querySelector('#days-value').innerHTML = days
-        document.querySelector('#hours-value').innerHTML = hours
-        document.querySelector('#mins-value').innerHTML = minutes
-        document.querySelector('#secs-value').innerHTML = seconds
-    }
-
-}, 1000);
+document.addEventListener('DOMContentLoaded', function () {
+    const eventDate = new Date("February 26, 2025 10:00:00").getTime();
+    const countDown = setInterval(() => {
+        const currentDate = new Date().getTime();
+        const timeToEvent = eventDate - currentDate;
+        const days = Math.floor(timeToEvent / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeToEvent % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeToEvent % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeToEvent % (1000 * 60)) / 1000);
+        
+        document.querySelector('#days-value').innerHTML = days;
+        document.querySelector('#hours-value').innerHTML = hours;
+        document.querySelector('#mins-value').innerHTML = minutes;
+        document.querySelector('#secs-value').innerHTML = seconds;
+    }, 1000);
+});
 
 
 // document.querySelector('#hero-button').addEventListener('click', () => {
