@@ -107,7 +107,7 @@ heroButton.addEventListener(('click'), () => {
 
 // Countdown Timer
         // Use ISO 8601 date format for better compatibility
-var countDownDate = new Date("2025-02-26T00:00:00Z").getTime(); // UTC time
+var countDownDate = new Date("2025-02-26T9:00:00Z").getTime(); // UTC time
 
 var x = setInterval(function() {
   var now = new Date().getTime();
